@@ -17,6 +17,33 @@ import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
 
 // Quantity wise images
 import DryCleanShampoo100ml from './assets/100ml/Dry-clean-shampoo.png';
+import CarwashShampoo100ml from './assets/100ml/Car-wash.png';
+import GlassCleaner100ml from './assets/100ml/Glass-cleaner.png';
+import GlassDeffoger100ml from './assets/100ml/Glass-deffoger.png';
+import WiperWasherShampoo100ml from './assets/100ml/Wiper-washer-shampoo.png';
+// 500ml
+import DryCleanShampoo500ml from './assets/500ml/Dry clean Shampoo.png';
+import CarwashShampoo500ml from './assets/500ml/Car wash shampoo.png';
+import GlassCleaner500ml from './assets/500ml/Glass cleaner.png';
+import GlassDeffoger500ml from './assets/500ml/Glass-deffoger.png';
+import WiperWasherShampoo500ml from './assets/500ml/Wiper washer shampoo.png';
+import CarPerfume500ml from './assets/500ml/Car perfume.png'
+import DashboardPolish500ml from './assets/500ml/Dashboard polish.png'
+import TyrePolish500ml from './assets/500ml/Tyre polish.png'
+
+
+// 5l
+import DryCleanShampoo5L from './assets/5L/Dry-clean-Shampoo-b.png';
+import CarwashShampoo5L from './assets/5L/Car-wash-shampoo-b.png';
+import GlassCleaner5L from './assets/5L/Glass-cleaner-b.png';
+import GlassDeffoger5L from './assets/5L/Glass-deffoger.png';
+import WiperWasherShampoo5L from './assets/5L/wiper-washer-shampoo.png';
+import CarPerfume5L from './assets/5L/Car-perfume-b.png'
+import DashboardPolish5L from './assets/5L/Dashboard-polish-b.png'
+import TyrePolish5L from './assets/5L/Tyre-polish-b.png'
+
+
+
 
 
 
@@ -47,10 +74,10 @@ const products = {
     category: 'CAR CARE',
     rating: 4.5,
      variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20  },
+      { volume: '200ml', price: 749, stock: 10, image: CarPerfume },
+      { volume: '500ml', price: 949, stock: 5 ,image: CarPerfume500ml},
+      { volume: '5L', price: 1599, stock: 5 , image: CarPerfume5L}
     ],
     benefits: [
       'Long-lasting fragrance',
@@ -93,10 +120,10 @@ const products = {
     category: 'CAR CARE',
     rating: 4.3,
      variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20},
+      { volume: '200ml', price: 749, stock: 10 ,image: TyrePolish },
+      { volume: '500ml', price: 949, stock: 5 ,image: TyrePolish500ml},
+      { volume: '5L', price: 1599, stock: 5 ,image: TyrePolish5L}
     ],
     benefits: [
       'UV protection',
@@ -143,10 +170,10 @@ const products = {
     category: 'CAR CARE',
     rating: 0,
      variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20, image: CarwashShampoo100ml },
+      { volume: '200ml', price: 749, stock: 10, image: CarwashShampoo },
+      { volume: '500ml', price: 949, stock: 5 ,image: CarwashShampoo500ml},
+      { volume: '5L', price: 1599, stock: 5 , image: CarwashShampoo5L}
     ],
     benefits: [
       'Gentle cleaning',
@@ -251,10 +278,10 @@ const products = {
     category: 'HOME CARE',
     rating: 0,
       variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
+      { volume: '100ml', price: 199, stock: 20  },
+      { volume: '200ml', price: 749, stock: 10 , image: RoomFreshener },
       { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '5L', price: 1599, stock: 5}
     ],
     benefits: [
       'Long-Lasting Scent',
@@ -296,8 +323,8 @@ const products = {
    variants: [
       { volume: '100ml', price: 199, stock: 20 , image: DryCleanShampoo100ml},
       { volume: '200ml', price: 749, stock: 10 , image: DryCleanShampoo},
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '500ml', price: 949, stock: 5, image: DryCleanShampoo500ml },
+      { volume: '5L', price: 1599, stock: 5, image: DryCleanShampoo5L }
     ],
   benefits: [
     'Waterless cleaning solution',
@@ -341,10 +368,10 @@ const products = {
   category: 'CAR CARE',
   rating: 4.6,
    variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20 , image: GlassCleaner100ml },
+      { volume: '200ml', price: 749, stock: 10, image: GlassCleaner },
+      { volume: '500ml', price: 949, stock: 5 , image: GlassCleaner500ml },
+      { volume: '5L', price: 1599, stock: 5,image: GlassCleaner5L }
     ],
   benefits: [
     'Streak-free shine',
@@ -388,10 +415,10 @@ const products = {
   category: 'CAR CARE',
   rating: 4.3,
    variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20 , image: GlassDeffoger100ml },
+      { volume: '200ml', price: 749, stock: 10 , image: GlassDeffoger },
+      { volume: '500ml', price: 949, stock: 5 ,image: GlassDeffoger500ml },
+      { volume: '5L', price: 1599, stock: 5 ,image: GlassDeffoger5L }
     ],
   benefits: [
     'Prevents fog build-up',
@@ -435,10 +462,10 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '100ml', price: 199, stock: 20, image: WiperWasherShampoo100ml },
+      { volume: '200ml', price: 749, stock: 10 , image: WiperWasherShampoo },
+      { volume: '500ml', price: 949, stock: 5, image: WiperWasherShampoo500ml },
+      { volume: '5L', price: 1599, stock: 5 ,image: WiperWasherShampoo5L }
     ],
   benefits: [
     'Cleans windshield thoroughly',
@@ -733,10 +760,10 @@ export default function ProductDetails() {
               <span className="text-green-600 font-semibold">In Stock ({product.stock})</span>
             </div>
             <div className="flex items-center gap-4 mb-6">
-              <p className="text-3xl font-bold text-teal-700">{product.price}</p>
+              <p className="text-3xl font-bold text-teal-700">{selectedVariant?.price ?? product.price}</p>
               {product.originalPrice && (
                 <>
-                  <p className="text-xl text-gray-500 line-through">{product.originalPrice}</p>
+                  <p className="text-xl text-gray-500 line-through">{selectedVariant?.price ?? product.price}</p>
                   <span className="text-sm text-red-600">-10%</span>
                 </>
               )}
