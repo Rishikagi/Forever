@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ShoppingCartIcon, HeartIcon, ShareIcon } from '@heroicons/react/24/outline';
 import { useCart } from './context/CartContext';
 import { useWishlist } from './context/WishlistContext';
+// 200ml
 import RoomFreshener from './assets/200ml/Car-perfume.png'
 import CarPerfume from './assets/200ml/Car-perfume.png'
 import DashboardPolish from './assets/200ml/Dashboard-polish.png'
@@ -16,11 +17,23 @@ import GlassDeffoger from './assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
 
 // Quantity wise images
+// 100ml
 import DryCleanShampoo100ml from './assets/100ml/Dry-clean-shampoo.png';
 import CarwashShampoo100ml from './assets/100ml/Car-wash.png';
 import GlassCleaner100ml from './assets/100ml/Glass-cleaner.png';
 import GlassDeffoger100ml from './assets/100ml/Glass-deffoger.png';
 import WiperWasherShampoo100ml from './assets/100ml/Wiper-washer-shampoo.png';
+
+// 30ml
+import CarPerfume30ml from './assets/30ml/car perfume.png';
+import TyrePolish30ml from './assets/30ml/Tyre polish.png';
+import DashboardPolish30ml from './assets/30ml/Dashboard polish.png';
+import DryCleanShampoo30ml from './assets/30ml/Dry clean Shampoo.png';
+import GlassCleaner30ml from './assets/30ml/glass cleaner.png';
+import GlassDeffoger30ml from './assets/30ml/glass defogger.png';
+import GlassWashShampoo30ml from './assets/30ml/glass wash shampoo.png'; //new product
+import WiperWasherShampoo30ml from './assets/30ml/wiper washer shampoo.png';
+
 // 500ml
 import DryCleanShampoo500ml from './assets/500ml/Dry clean Shampoo.png';
 import CarwashShampoo500ml from './assets/500ml/Car wash shampoo.png';
@@ -41,6 +54,8 @@ import WiperWasherShampoo5L from './assets/5L/wiper-washer-shampoo.png';
 import CarPerfume5L from './assets/5L/Car-perfume-b.png'
 import DashboardPolish5L from './assets/5L/Dashboard-polish-b.png'
 import TyrePolish5L from './assets/5L/Tyre-polish-b.png'
+import Dashboard from './assets/5l/Dashboard.png'
+import DryClean from './assets/5l/Dry clean.png'
 
 
 
@@ -74,10 +89,13 @@ const products = {
     category: 'CAR CARE',
     rating: 4.5,
      variants: [
+      { volume: '30ml', price: 1599, stock: 5 , image: CarPerfume30ml},
       { volume: '100ml', price: 199, stock: 20  },
       { volume: '200ml', price: 749, stock: 10, image: CarPerfume },
       { volume: '500ml', price: 949, stock: 5 ,image: CarPerfume500ml},
-      { volume: '5L', price: 1599, stock: 5 , image: CarPerfume5L}
+      { volume: '5L', price: 1599, stock: 5 , image: CarPerfume5L},
+      
+      
     ],
     benefits: [
       'Long-lasting fragrance',
@@ -120,10 +138,12 @@ const products = {
     category: 'CAR CARE',
     rating: 4.3,
      variants: [
+      { volume: '30ml', price: 1599, stock: 5 , image: TyrePolish30ml},
       { volume: '100ml', price: 199, stock: 20},
       { volume: '200ml', price: 749, stock: 10 ,image: TyrePolish },
       { volume: '500ml', price: 949, stock: 5 ,image: TyrePolish500ml},
-      { volume: '5L', price: 1599, stock: 5 ,image: TyrePolish5L}
+      { volume: '5L', price: 1599, stock: 5 ,image: TyrePolish5L},
+      
     ],
     benefits: [
       'UV protection',
@@ -170,10 +190,12 @@ const products = {
     category: 'CAR CARE',
     rating: 0,
      variants: [
+      { volume: '30ml', price: 1599, stock: 5 },
       { volume: '100ml', price: 199, stock: 20, image: CarwashShampoo100ml },
       { volume: '200ml', price: 749, stock: 10, image: CarwashShampoo },
       { volume: '500ml', price: 949, stock: 5 ,image: CarwashShampoo500ml},
-      { volume: '5L', price: 1599, stock: 5 , image: CarwashShampoo5L}
+      { volume: '5L', price: 1599, stock: 5 , image: CarwashShampoo5L},
+      
     ],
     benefits: [
       'Gentle cleaning',
@@ -227,10 +249,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.6,
      variants: [
+       { volume: '30ml', price: 1599, stock: 5 , image: DashboardPolish30ml} ,
       { volume: '100ml', price: 199, stock: 20 },
       { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5 }
+      { volume: '500ml', price: 949, stock: 5, image: DashboardPolish500ml },
+      { volume: '5L', price: 1599, stock: 5 , image: DashboardPolish5L}
     ],
     benefits: [
       'Restores shine',
@@ -278,10 +301,12 @@ const products = {
     category: 'HOME CARE',
     rating: 0,
       variants: [
+        { volume: '30ml', price: 159, stock: 5 , image: RoomFreshener },
       { volume: '100ml', price: 199, stock: 20  },
       { volume: '200ml', price: 749, stock: 10 , image: RoomFreshener },
       { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5}
+      { volume: '5L', price: 1599, stock: 5},
+      
     ],
     benefits: [
       'Long-Lasting Scent',
@@ -321,10 +346,12 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
+    { volume: '30ml', price: 1599, stock: 5 , image: DryCleanShampoo30ml },
       { volume: '100ml', price: 199, stock: 20 , image: DryCleanShampoo100ml},
       { volume: '200ml', price: 749, stock: 10 , image: DryCleanShampoo},
       { volume: '500ml', price: 949, stock: 5, image: DryCleanShampoo500ml },
-      { volume: '5L', price: 1599, stock: 5, image: DryCleanShampoo5L }
+      { volume: '5L', price: 1599, stock: 5, image: DryCleanShampoo5L },
+      
     ],
   benefits: [
     'Waterless cleaning solution',
@@ -368,10 +395,12 @@ const products = {
   category: 'CAR CARE',
   rating: 4.6,
    variants: [
+    { volume: '30ml', price: 1599, stock: 5 , image: GlassCleaner30ml },
       { volume: '100ml', price: 199, stock: 20 , image: GlassCleaner100ml },
       { volume: '200ml', price: 749, stock: 10, image: GlassCleaner },
       { volume: '500ml', price: 949, stock: 5 , image: GlassCleaner500ml },
-      { volume: '5L', price: 1599, stock: 5,image: GlassCleaner5L }
+      { volume: '5L', price: 1599, stock: 5,image: GlassCleaner5L },
+      
     ],
   benefits: [
     'Streak-free shine',
@@ -415,10 +444,12 @@ const products = {
   category: 'CAR CARE',
   rating: 4.3,
    variants: [
+    { volume: '30ml', price: 1599, stock: 5 ,image: GlassDeffoger30ml },
       { volume: '100ml', price: 199, stock: 20 , image: GlassDeffoger100ml },
       { volume: '200ml', price: 749, stock: 10 , image: GlassDeffoger },
       { volume: '500ml', price: 949, stock: 5 ,image: GlassDeffoger500ml },
-      { volume: '5L', price: 1599, stock: 5 ,image: GlassDeffoger5L }
+      { volume: '5L', price: 1599, stock: 5 ,image: GlassDeffoger5L },
+      
     ],
   benefits: [
     'Prevents fog build-up',
@@ -462,10 +493,12 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
+    { volume: '30ml', price: 1599, stock: 5 , image: WiperWasherShampoo30ml },
       { volume: '100ml', price: 199, stock: 20, image: WiperWasherShampoo100ml },
       { volume: '200ml', price: 749, stock: 10 , image: WiperWasherShampoo },
       { volume: '500ml', price: 949, stock: 5, image: WiperWasherShampoo500ml },
-      { volume: '5L', price: 1599, stock: 5 ,image: WiperWasherShampoo5L }
+      { volume: '5L', price: 1599, stock: 5 ,image: WiperWasherShampoo5L },
+      
     ],
   benefits: [
     'Cleans windshield thoroughly',
@@ -500,7 +533,56 @@ const products = {
   image: WiperWasherShampoo,
   stock: 45,
   reviews: 88
+},
+// 30ml new product
+'glasswash-shampoo': {
+  name: 'Glasswash Shampoo',
+  price: '₹ 249.00',
+  description: 'Premium glasswash shampoo that provides a crystal-clear finish and removes tough dirt, grime, and water stains from your vehicle’s windows and mirrors.',
+  category: 'CAR CARE',
+  rating: 4.7,
+  variants: [
+    { volume: '30ml', price: 79, stock: 12, image: GlassWashShampoo30ml },
+    { volume: '100ml', price: 99, stock: 0 }, 
+    { volume: '200ml', price: 179, stock: 12 },
+    { volume: '500ml', price: 299, stock: 8 },
+    { volume: '5L', price: 1599, stock: 2 },
+  ],
+  benefits: [
+    'Removes dirt, grease, and water stains',
+    'Provides crystal-clear finish',
+    'Streak-free cleaning formula',
+    'Safe on tinted glass',
+    'Easy rinse with no residue',
+    'Concentrated formula for long-term use',
+    'Gentle on surfaces',
+    'Ideal for both cars and household glass surfaces'
+  ],
+  howToUse: [
+    {
+      title: 'Step 1',
+      description: 'Dilute the shampoo with water as per instructions on the bottle.'
+    },
+    {
+      title: 'Step 2',
+      description: 'Apply the solution using a microfiber cloth or sponge over glass surfaces.'
+    },
+    {
+      title: 'Step 3',
+      description: 'Rinse thoroughly with clean water and wipe dry for a streak-free shine.'
+    }
+  ],
+  keyIngredients: [
+    'Surfactants: Help lift and remove dirt',
+    'Water softeners: Prevent mineral deposits',
+    'Anti-fog agents: Improve clarity',
+    'pH balanced agents: Safe on all glass types'
+  ],
+  image: GlassWashShampoo30ml,
+  stock: 26,
+  reviews: 87
 }
+
 
 };
 
@@ -672,7 +754,7 @@ export default function ProductDetails() {
                   height: '150px',
                   top: zoomPosition.y - 75,
                   left: zoomPosition.x - 75,
-                  backgroundImage: `url(${product.image})`,
+                  backgroundImage: `url(${selectedVariant?.image || product.image})`,
                   backgroundRepeat: 'no-repeat',
                   backgroundSize: `${imgRef.current.width * 2}px ${imgRef.current.height * 2}px`,
                   backgroundPosition: `-${zoomPosition.x * 2 - 75}px -${zoomPosition.y * 2 - 75}px`,
@@ -757,7 +839,7 @@ export default function ProductDetails() {
                 ))}
                 <span className="ml-2 text-gray-600">({product.reviews} reviews)</span>
               </div>
-              <span className="text-green-600 font-semibold">In Stock ({product.stock})</span>
+              <span className="text-green-600 font-semibold">In Stock ({selectedVariant?.stock ?? product.stock})</span>
             </div>
             <div className="flex items-center gap-4 mb-6">
               <p className="text-3xl font-bold text-teal-700">{selectedVariant?.price ?? product.price}</p>
@@ -778,24 +860,33 @@ export default function ProductDetails() {
             <p className="text-gray-600">{product.description}</p>
           </div>
           {/* quantity selection */}
-          <div className="space-y-4">
-            <h2 className="text-xl font-semibold text-gray-900">Quantity:</h2>
-             <div className="flex gap-3 flex-wrap">
-          {product.variants.map((variant, index) => (
-            <button
-              key={index}
-              onClick={() => setSelectedVariant(variant)}
-              className={`px-4 py-2 border rounded-full transition-all ${
-                variant.volume === variant.volume
-                  ?'bg-transparent text-black border-grey hover:bg-teal-700 transition-all hover:text-white rounded-[5px]'
-  : 'bg-transparent text-black border-gray-300 hover:bg-teal-700 transition-all hover:text-white'
-              }`}
-            >
-              {variant.volume}
-            </button>
-            ))}
-        </div>
-          </div>
+<div className="space-y-4">
+  <h2 className="text-xl font-semibold text-gray-900">Quantity:</h2>
+  <div className="flex gap-3 flex-wrap">
+    {product.variants.map((variant, index) => {
+      const isSelected = selectedVariant?.volume === variant.volume;
+      const isDisabled = !variant.image; // or variant.stock === 0
+
+      return (
+        <button
+          key={index}
+          onClick={() => !isDisabled && setSelectedVariant(variant)}
+          disabled={isDisabled}
+          className={`px-4 py-2 border rounded-full transition-all
+            ${isDisabled
+              ? 'bg-gray-100 text-gray-400 border-gray-200 cursor-not-allowed'
+              : isSelected
+                ? 'bg-teal-700 text-white border-teal-700'
+                : 'bg-transparent text-black border-gray-300 hover:bg-teal-700 hover:text-white'
+            }`}
+        >
+          {variant.volume}
+        </button>
+      );
+    })}
+  </div>
+</div>
+
 
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-900">Benefits</h2>

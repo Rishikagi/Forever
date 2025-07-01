@@ -20,6 +20,7 @@ import DryCleanShampoo from './assets/200ml/Dry-clean-shampoo.png';
 import GlassCleaner from './assets/200ml/Glass cleaner.png';
 import GlassDeffoger from './assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
+import GlassWashShampoo30ml from './assets/30ml/glass wash shampoo.png'; //new product
 
 import Blog1 from './images/Blog1.jpg'
 import Blog2 from './images/Blog2.jpg'
@@ -66,6 +67,12 @@ const newArrivals = [
     name: 'Room Freshener',
     price: '₹ 90.00',
     image: RoomFreshener,
+  },
+   {
+    id: 'glass-wash-shampoo',
+    name: 'Glass Wash Shampoo',
+    price: '₹ 79.00',
+    image: GlassWashShampoo30ml,
   },
 ];
 

@@ -38,6 +38,7 @@ const baseProducts = [
     priceDisplay: '₹ 90.00',
     image: GlassCleaner,
   },
+  
 ];
 
 // Create 16 products by repeating the base products
