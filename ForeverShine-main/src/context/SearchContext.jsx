@@ -12,6 +12,7 @@ import DryCleanShampoo from '../assets/200ml/Dry-clean-shampoo.png';
 import GlassCleaner from '../assets/200ml/Glass cleaner.png';
 import GlassDeffoger from '../assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from '../assets/200ml/Wiper washer shampoo.png';
+import GlassWashShampoo30ml from '../assets/30ml/glass wash shampoo.png'; 
 
 const SearchContext = createContext();
 
@@ -80,9 +81,20 @@ export function SearchProvider({ children }) {
       price: '₹ 90.00',
       image: GlassCleaner
     },
+    
     {
       id: 'glass-deffoger',
       name: 'Glass Deffoger',
+
+    },
+     {
+      id: 'wiper-washer-shampoo',
+      name: 'Wiper Washer Shampoo',
+
+    } ,
+    {
+      id: 'glass-wash-shampoo',
+      name: 'Glass Wash Shampoo',
 
     }
   ];
