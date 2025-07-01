@@ -13,6 +13,7 @@ import CarwashShampoo from './assets/200ml/Car-wash-shampoo.png'
 // new images
 import GlassDeffoger from './assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
+import DryCleanShampoo from './assets/200ml/Dry-clean-shampoo.png';
 import GlassWashShampoo30ml from './assets/30ml/glass wash shampoo.png'; //new product
 
 
@@ -58,7 +59,13 @@ const baseProducts = [
     priceDisplay: '₹ 90.00',
     image: GlassDeffoger,
   },
-   
+     {
+    id: 'dry-clean-shampoo',
+    name: 'Dry Clean Shampoo',
+    price: 90.00,
+    priceDisplay: '₹ 90.00',
+    image: DryCleanShampoo,
+  },
   {
      id: 'glass-wash-shampoo',
      name: 'Glass Wash Shampoo',

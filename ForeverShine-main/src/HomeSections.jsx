@@ -62,18 +62,14 @@ const newArrivals = [
     price: '₹ 140.00',
     image: CarwashShampoo,
   },
+ 
   {
     id: 'room-freshener',
     name: 'Room Freshener',
     price: '₹ 90.00',
     image: RoomFreshener,
   },
-   {
-    id: 'glass-wash-shampoo',
-    name: 'Glass Wash Shampoo',
-    price: '₹ 79.00',
-    image: GlassWashShampoo30ml,
-  },
+  
 ];
 
 const bestSellers = [
@@ -107,6 +103,12 @@ const bestSellers = [
     name: 'Dry Clean Shampoo',
     price: '₹ 150.00',
     image: DryCleanShampoo,
+  },
+    {
+    id: 'glass-wash-shampoo',
+    name: 'Glass Wash Shampoo',
+    price: '₹ 99.00',
+    image: GlassWashShampoo30ml,
   },
   {
     id: 'glass-cleaner',

@@ -8,7 +8,7 @@ import { HeartIcon, ShareIcon } from '@heroicons/react/24/outline';
 import RoomFreshener from './assets/200ml/Car-perfume.png'
 
 // new images
-import DryCleanShampoo from './assets/200ml/Dry-clean-shampoo.png';
+
 import GlassCleaner from './assets/200ml/Glass cleaner.png';
 
 
@@ -24,13 +24,7 @@ const baseProducts = [
     priceDisplay: '₹ 90.00',
     image: RoomFreshener,
   },
-  {
-    id: 'dry-clean-shampoo',
-    name: 'Dry Clean Shampoo',
-    price: 90.00,
-    priceDisplay: '₹ 90.00',
-    image: DryCleanShampoo,
-  },
+
   {
     id: 'glass-cleaner',
     name: 'Glass Cleaner',

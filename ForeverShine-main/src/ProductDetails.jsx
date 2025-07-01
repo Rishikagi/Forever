@@ -89,11 +89,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.5,
      variants: [
-      { volume: '30ml', price: 1599, stock: 5 , image: CarPerfume30ml},
-      { volume: '100ml', price: 199, stock: 20  },
-      { volume: '200ml', price: 749, stock: 10, image: CarPerfume },
-      { volume: '500ml', price: 949, stock: 5 ,image: CarPerfume500ml},
-      { volume: '5L', price: 1599, stock: 5 , image: CarPerfume5L},
+      { volume: '30ml', price: '₹ 90', stock: 5 , image: CarPerfume30ml},
+      { volume: '100ml', price:'₹ 199', stock: 20  },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: CarPerfume },
+      { volume: '500ml', price: '₹ 949', stock: 5 ,image: CarPerfume500ml},
+      { volume: '5L', price: '₹ 1599', stock: 5 , image: CarPerfume5L},
       
       
     ],
@@ -138,17 +138,17 @@ const products = {
     category: 'CAR CARE',
     rating: 4.3,
      variants: [
-      { volume: '30ml', price: 1599, stock: 5 , image: TyrePolish30ml},
-      { volume: '100ml', price: 199, stock: 20},
-      { volume: '200ml', price: 749, stock: 10 ,image: TyrePolish },
-      { volume: '500ml', price: 949, stock: 5 ,image: TyrePolish500ml},
-      { volume: '5L', price: 1599, stock: 5 ,image: TyrePolish5L},
+      { volume: '30ml', price: '₹ 90', stock: 5 , image: TyrePolish30ml},
+      { volume: '100ml', price: '₹ 199', stock: 20},
+      { volume: '200ml', price: '₹ 749', stock: 10 ,image: TyrePolish },
+      { volume: '500ml', price: '₹ 949', stock: 5 ,image: TyrePolish500ml},
+      { volume: '5L', price: '₹ 1599', stock: 5 ,image: TyrePolish5L},
       
     ],
     benefits: [
       'UV protection',
       'Long-lasting shine',
-      'Easy application',
+      'Fast drying formula',
       'Water-resistant',
       'Restores tyre color',
       'Prevents cracking',
@@ -190,11 +190,11 @@ const products = {
     category: 'CAR CARE',
     rating: 0,
      variants: [
-      { volume: '30ml', price: 1599, stock: 5 },
-      { volume: '100ml', price: 199, stock: 20, image: CarwashShampoo100ml },
-      { volume: '200ml', price: 749, stock: 10, image: CarwashShampoo },
-      { volume: '500ml', price: 949, stock: 5 ,image: CarwashShampoo500ml},
-      { volume: '5L', price: 1599, stock: 5 , image: CarwashShampoo5L},
+      { volume: '30ml', price: '₹ 90', stock: 5 },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: CarwashShampoo100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: CarwashShampoo },
+      { volume: '500ml', price: '₹ 949', stock: 5 ,image: CarwashShampoo500ml},
+      { volume: '5L', price: '₹ 1599', stock: 5 , image: CarwashShampoo5L},
       
     ],
     benefits: [
@@ -249,11 +249,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.6,
      variants: [
-       { volume: '30ml', price: 1599, stock: 5 , image: DashboardPolish30ml} ,
-      { volume: '100ml', price: 199, stock: 20 },
-      { volume: '200ml', price: 749, stock: 10 },
-      { volume: '500ml', price: 949, stock: 5, image: DashboardPolish500ml },
-      { volume: '5L', price: 1599, stock: 5 , image: DashboardPolish5L}
+       { volume: '30ml', price: '₹ 90', stock: 5 , image: DashboardPolish30ml} ,
+      { volume: '100ml', price: '₹ 199', stock: 20 },
+      { volume: '200ml', price: '₹ 749', stock: 10 },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: DashboardPolish500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5 , image: DashboardPolish5L}
     ],
     benefits: [
       'Restores shine',
@@ -301,11 +301,11 @@ const products = {
     category: 'HOME CARE',
     rating: 0,
       variants: [
-        { volume: '30ml', price: 159, stock: 5 , image: RoomFreshener },
-      { volume: '100ml', price: 199, stock: 20  },
-      { volume: '200ml', price: 749, stock: 10 , image: RoomFreshener },
-      { volume: '500ml', price: 949, stock: 5 },
-      { volume: '5L', price: 1599, stock: 5},
+        { volume: '30ml', price: '₹ 90', stock: 5 , image: RoomFreshener },
+      { volume: '100ml', price: '₹ 199', stock: 20  },
+      { volume: '200ml', price: '₹ 749', stock: 10 , image: RoomFreshener },
+      { volume: '500ml', price: '₹ 949', stock: 5 },
+      { volume: '5L', price: '₹ 1599', stock: 5},
       
     ],
     benefits: [
@@ -346,11 +346,11 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
-    { volume: '30ml', price: 1599, stock: 5 , image: DryCleanShampoo30ml },
-      { volume: '100ml', price: 199, stock: 20 , image: DryCleanShampoo100ml},
-      { volume: '200ml', price: 749, stock: 10 , image: DryCleanShampoo},
-      { volume: '500ml', price: 949, stock: 5, image: DryCleanShampoo500ml },
-      { volume: '5L', price: 1599, stock: 5, image: DryCleanShampoo5L },
+    { volume: '30ml', price: '₹ 90', stock: 5 , image: DryCleanShampoo30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20 , image: DryCleanShampoo100ml},
+      { volume: '200ml', price: '₹ 749', stock: 10 , image: DryCleanShampoo},
+      { volume: '500ml', price: '₹ 949', stock: 5, image: DryCleanShampoo500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: DryCleanShampoo5L },
       
     ],
   benefits: [
@@ -392,45 +392,50 @@ const products = {
   name: 'Glass Cleaner',
   price: '₹ 145.00',
   description: 'Crystal-clear glass cleaner that removes smudges, dust, and grime from car windows and mirrors for perfect visibility.',
-  category: 'CAR CARE',
+  category: ' HOME CARE',
   rating: 4.6,
    variants: [
-    { volume: '30ml', price: 1599, stock: 5 , image: GlassCleaner30ml },
-      { volume: '100ml', price: 199, stock: 20 , image: GlassCleaner100ml },
-      { volume: '200ml', price: 749, stock: 10, image: GlassCleaner },
-      { volume: '500ml', price: 949, stock: 5 , image: GlassCleaner500ml },
-      { volume: '5L', price: 1599, stock: 5,image: GlassCleaner5L },
+    { volume: '30ml', price: '₹ 90', stock: 5 , image: GlassCleaner30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassCleaner100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: GlassCleaner },
+      { volume: '500ml', price: '₹ 949', stock: 5 , image: GlassCleaner500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5,image: GlassCleaner5L },
       
     ],
   benefits: [
-    'Streak-free shine',
-    'Fast-acting formula',
-    'Safe on tinted glass',
-    'Removes oil, grime, and bugs',
-    'Quick drying',
-    'Non-ammonia formula',
-    'Leaves pleasant fragrance',
-    'Enhances driving visibility'
+   'Crystal clear visibility',
+' Safety check',
+'Better driving experience',
+'Protects against defogging and moisture/condensation',
+ 'Long lasting effect',
+ 'Multi glass usage',
+ 'Easy to apply',
+ 'Easy to carry',
+ 'Affordable price',
+  'Eco-friendly formula',
+  'Spray nozzle'
+
   ],
   howToUse: [
     {
       title: 'Step 1',
-      description: 'Spray directly on glass surface.'
+      description: 'first wipe your glasses or screen with a dry microfiber cloth to remove any loose dirt.'
     },
     {
       title: 'Step 2',
-      description: 'Wipe with a clean, dry cloth in circular motion.'
+      description: 'spray the solution onto the cloth (not directly on the lenses) and gently wipe the lenses or screen in circular motions.'
     },
     {
       title: 'Step 3',
-      description: 'Buff with microfiber cloth for shine.'
+      description: 'use a dry part of the cloth for a streak-free finish. Repeat the process if required.'
     }
   ],
   keyIngredients: [
-    'Isopropyl alcohol: Quick-drying and degreasing',
-    'Surfactants: Lift dirt and grime',
-    'Distilled water: No mineral residues',
-    'Fragrance: Fresh finish'
+   ' Water: The main ingredient, used as a solvent and carrier.',
+'Ammonia: A powerful agent that eradicates through dirt and grease',
+
+'Surfactants: Help to break down dirt and grease, making it easier to remove',
+'Fragrance: Added for a pleasant scent.',
   ],
   image: GlassCleaner,
   stock: 60,
@@ -440,26 +445,29 @@ const products = {
 'glass-deffoger': {
   name: 'Glass Deffoger',
   price: '₹ 165.00',
-  description: 'Anti-fog spray that prevents glass fogging and improves visibility during rainy or humid conditions.',
+  description: ' Forever shine brings the most affordable and usable product for your car to keep all your glasses, mirrors and lenses fost free. Our Glass Deffoger cute through moisture and keeps your windows sparkling clear.',
   category: 'CAR CARE',
   rating: 4.3,
    variants: [
-    { volume: '30ml', price: 1599, stock: 5 ,image: GlassDeffoger30ml },
-      { volume: '100ml', price: 199, stock: 20 , image: GlassDeffoger100ml },
-      { volume: '200ml', price: 749, stock: 10 , image: GlassDeffoger },
-      { volume: '500ml', price: 949, stock: 5 ,image: GlassDeffoger500ml },
-      { volume: '5L', price: 1599, stock: 5 ,image: GlassDeffoger5L },
+    { volume: '30ml', price: '₹ 90', stock: 5 ,image: GlassDeffoger30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassDeffoger100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10 , image: GlassDeffoger },
+      { volume: '500ml', price: '₹ 949', stock: 5 ,image: GlassDeffoger500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5 ,image: GlassDeffoger5L },
       
     ],
   benefits: [
-    'Prevents fog build-up',
-    'Improves visibility',
-    'Safe for all glass types',
-    'Long-lasting effect',
-    'Quick and easy application',
-    'Non-toxic formula',
-    'Works instantly',
-    'Suitable for mirrors and windows'
+     'Crystal clear visibility',
+' Safety check',
+'Better driving experience',
+'Protects against defogging and moisture/condensation',
+ 'Long lasting effect',
+ 'Multi glass usage',
+ 'Easy to apply',
+ 'Easy to carry',
+ 'Affordable price',
+  'Eco-friendly formula',
+  'Spray nozzle'
   ],
   howToUse: [
     {
@@ -489,64 +497,66 @@ const products = {
 'wiper-washer-shampoo': {
   name: 'Wiper Washer Shampoo',
   price: '₹ 120.00',
-  description: 'Highly effective wiper washer fluid that cleans windshields and enhances wiper performance for a clear driving view.',
+  description: 'Our product is especially created to keep your car glass pane and wipers dust free.',
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
-    { volume: '30ml', price: 1599, stock: 5 , image: WiperWasherShampoo30ml },
-      { volume: '100ml', price: 199, stock: 20, image: WiperWasherShampoo100ml },
-      { volume: '200ml', price: 749, stock: 10 , image: WiperWasherShampoo },
-      { volume: '500ml', price: 949, stock: 5, image: WiperWasherShampoo500ml },
-      { volume: '5L', price: 1599, stock: 5 ,image: WiperWasherShampoo5L },
+    { volume: '30ml', price:  '₹ 90', stock: 5 , image: WiperWasherShampoo30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: WiperWasherShampoo100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10 , image: WiperWasherShampoo },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: WiperWasherShampoo500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5 ,image: WiperWasherShampoo5L },
       
     ],
   benefits: [
-    'Cleans windshield thoroughly',
-    'Prevents wiper blade marks',
-    'Safe for rubber and glass',
-    'Removes bugs and oil film',
-    'Enhances wiper performance',
-    'No residue left',
-    'Pleasant fragrance',
-    'Easy to mix and use'
+    'Protection',
+    'Improved visibility',
+    'Long Lasting wiper life',
+    'Smooth wiping',
+    'Clear/scratch-free windshield',
+    'Super Convenient',
+    'Quick and easy to use',
+    'No damage or scratches',
+    'Affordable price',
+    'Shiny wipers'
   ],
   howToUse: [
     {
       title: 'Step 1',
-      description: 'Dilute shampoo in water as per instruction.'
+      description: 'Store in a special container under the hood called a reservoir.'
     },
     {
       title: 'Step 2',
-      description: 'Pour into the wiper washer tank.'
+      description: 'Press the button on your steering wheel to activate the wipers and spray the washer fluid onto the windshield.'
     },
     {
       title: 'Step 3',
-      description: 'Use wipers to clean windshield as needed.'
+      description: 'The wipers automatically wipe the windshield to remove dirt and shampoo.'
     }
   ],
   keyIngredients: [
-    'Cleaning agents: Remove dust and debris',
-    'Lubricants: Protect wiper blades',
-    'Deodorizer: Leaves fresh smell',
-    'Streak-free additives: Ensure clear visibility'
+    'Surfactants: This helps to break down dirt, grime and grease ',
+    'Solvents: These help to dissolve and remove contaminants.',
+    'Water: This is the primarysolvent and helps to dilute other ingredients.',
+    'Fragnances: Added to give it a good smell.'
   ],
   image: WiperWasherShampoo,
   stock: 45,
   reviews: 88
 },
 // 30ml new product
-'glasswash-shampoo': {
+'glass-wash-shampoo': {
   name: 'Glasswash Shampoo',
   price: '₹ 249.00',
   description: 'Premium glasswash shampoo that provides a crystal-clear finish and removes tough dirt, grime, and water stains from your vehicle’s windows and mirrors.',
   category: 'CAR CARE',
   rating: 4.7,
   variants: [
-    { volume: '30ml', price: 79, stock: 12, image: GlassWashShampoo30ml },
-    { volume: '100ml', price: 99, stock: 0 }, 
-    { volume: '200ml', price: 179, stock: 12 },
-    { volume: '500ml', price: 299, stock: 8 },
-    { volume: '5L', price: 1599, stock: 2 },
+    { volume: '30ml', price: '₹ 90', stock: 12, image: GlassWashShampoo30ml },
+    { volume: '100ml', price: '₹ 99', stock: 0 }, 
+    { volume: '200ml', price: '₹ 179', stock: 12 },
+    { volume: '500ml', price: '₹ 299', stock: 8 },
+    { volume: '5L', price: '₹ 1599', stock: 2 },
   ],
   benefits: [
     'Removes dirt, grease, and water stains',
@@ -579,7 +589,7 @@ const products = {
     'pH balanced agents: Safe on all glass types'
   ],
   image: GlassWashShampoo30ml,
-  stock: 26,
+  stock: 10,
   reviews: 87
 }
 
@@ -842,7 +852,7 @@ export default function ProductDetails() {
               <span className="text-green-600 font-semibold">In Stock ({selectedVariant?.stock ?? product.stock})</span>
             </div>
             <div className="flex items-center gap-4 mb-6">
-              <p className="text-3xl font-bold text-teal-700">{selectedVariant?.price ?? product.price}</p>
+              <p className="text-3xl font-bold text-teal-700"> {selectedVariant?.price ?? product.price}</p>
               {product.originalPrice && (
                 <>
                   <p className="text-xl text-gray-500 line-through">{selectedVariant?.price ?? product.price}</p>
