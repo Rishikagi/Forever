@@ -5,7 +5,7 @@ import { useWishlist } from './context/WishlistContext';
 import { HeartIcon, ShareIcon } from '@heroicons/react/24/outline';
 
 
-import RoomFreshener from './assets/200ml/Car-perfume.png'
+
 
 // new images
 
@@ -17,13 +17,7 @@ import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
 const baseProducts = [
-  {
-    id: 'room-freshener',
-    name: 'Room Freshener',
-    price: 90.00,
-    priceDisplay: '₹ 90.00',
-    image: RoomFreshener,
-  },
+
 
   {
     id: 'glass-cleaner',

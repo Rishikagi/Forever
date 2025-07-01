@@ -8,7 +8,7 @@ import PersonalCare from './images/Property 1=Group 8.jpg'
 import HomeCare from './images/Property 1=Component 7.jpg'
 import CarCare from './images/Property 1=1737913248.jpg'
 
-import RoomFreshener from './assets/200ml/Car-perfume.png'
+
 import CarPerfume from './assets/200ml/Car-perfume.png'
 import DashboardPolish from './assets/200ml/Dashboard-polish.png'
 import TyrePolish from './assets/200ml/Tyre-polish.png'
@@ -16,7 +16,7 @@ import CarwashShampoo from './assets/200ml/Car-wash-shampoo.png'
 import Forevershine from './images/ForeverShine.jpg'
 
 // new images
-import DryCleanShampoo from './assets/200ml/Dry-clean-shampoo.png';
+import DryCleanShampoo from './assets/200ml/dry clean shampoo.png';
 import GlassCleaner from './assets/200ml/Glass cleaner.png';
 import GlassDeffoger from './assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
@@ -44,12 +44,7 @@ const categories = [
 ];
 
 const newArrivals = [
-  {
-    id: 'car-perfume',
-    name: 'Car Perfume',
-    price: '₹ 225.00',
-    image: CarPerfume,
-  },
+  
   {
     id: 'tyre-polish',
     name: 'Tyre Polish',
@@ -63,22 +58,12 @@ const newArrivals = [
     image: CarwashShampoo,
   },
  
-  {
-    id: 'room-freshener',
-    name: 'Room Freshener',
-    price: '₹ 90.00',
-    image: RoomFreshener,
-  },
+ 
   
 ];
 
 const bestSellers = [
-  {
-    id: 'room-freshener',
-    name: 'Room Freshener',
-    price: '₹ 90.00',
-    image: RoomFreshener,
-  },
+ 
   {
     id: 'car-perfume',
     name: 'Car Perfume',

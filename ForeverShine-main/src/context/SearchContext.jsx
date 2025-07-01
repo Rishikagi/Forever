@@ -1,14 +1,14 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import RoomFreshener from '../assets/200ml/Car-perfume.png'
-import CarPerfume from '../assets/200ml/Car-perfume.png'
+
+import CarPerfume from '../assets/200ml/car-perfume.png'
 import DashboardPolish from '../assets/200ml/Dashboard-polish.png'
 import TyrePolish from '../assets/200ml/Tyre-polish.png'
-import CarwashShampoo from '../assets/200ml/Car-wash-shampoo.png'
+import CarwashShampoo from '../assets/200ml/car-wash-shampoo.png'
 
 
 // new images
 // new images
-import DryCleanShampoo from '../assets/200ml/Dry-clean-shampoo.png';
+import DryCleanShampoo from '../assets/200ml/dry clean shampoo.png';
 import GlassCleaner from '../assets/200ml/Glass cleaner.png';
 import GlassDeffoger from '../assets/200ml/Glass deffoger.png';
 import WiperWasherShampoo from '../assets/200ml/Wiper washer shampoo.png';
@@ -60,13 +60,7 @@ export function SearchProvider({ children }) {
       price: '₹ 90.00',
       image: DashboardPolish
     },
-    {
-      id: 'room-freshener',
-      name: 'Room Freshener',
-      category: 'HOME CARE',
-      price: '₹ 90.00',
-      image: RoomFreshener
-    },
+    
     {
       id: 'dry-clean-shampoo',
       name: 'Dry Clean Shampoo',

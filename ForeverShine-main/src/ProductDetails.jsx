@@ -4,17 +4,17 @@ import { ShoppingCartIcon, HeartIcon, ShareIcon } from '@heroicons/react/24/outl
 import { useCart } from './context/CartContext';
 import { useWishlist } from './context/WishlistContext';
 // 200ml
-import RoomFreshener from './assets/200ml/Car-perfume.png'
-import CarPerfume from './assets/200ml/Car-perfume.png'
+
+import CarPerfume from './assets/200ml/car-perfume.png'
 import DashboardPolish from './assets/200ml/Dashboard-polish.png'
 import TyrePolish from './assets/200ml/Tyre-polish.png'
-import CarwashShampoo from './assets/200ml/Car-wash-shampoo.png'
+import CarwashShampoo from './assets/200ml/car-wash-shampoo.png'
 
 // new images
-import DryCleanShampoo from './assets/200ml/Dry-clean-shampoo.png';
+import DryCleanShampoo from './assets/200ml/dry clean shampoo.png';
 import GlassCleaner from './assets/200ml/Glass cleaner.png';
 import GlassDeffoger from './assets/200ml/Glass deffoger.png';
-import WiperWasherShampoo from './assets/200ml/Wiper washer shampoo.png';
+import WiperWasherShampoo from './assets/200ml/wiper washer shampoo.png';
 
 // Quantity wise images
 // 100ml
@@ -23,6 +23,7 @@ import CarwashShampoo100ml from './assets/100ml/Car-wash.png';
 import GlassCleaner100ml from './assets/100ml/Glass-cleaner.png';
 import GlassDeffoger100ml from './assets/100ml/Glass-deffoger.png';
 import WiperWasherShampoo100ml from './assets/100ml/Wiper-washer-shampoo.png';
+import DashboardPolish100ml from './assets/100ml/Dashboard polish.png';
 
 // 30ml
 import CarPerfume30ml from './assets/30ml/car perfume.png';
@@ -92,7 +93,7 @@ const products = {
       { volume: '30ml', price: '₹ 90', stock: 5 , image: CarPerfume30ml},
       { volume: '100ml', price:'₹ 199', stock: 20  },
       { volume: '200ml', price: '₹ 749', stock: 10, image: CarPerfume },
-      { volume: '500ml', price: '₹ 949', stock: 5 ,image: CarPerfume500ml},
+      { volume: '500ml', price: '₹ 949', stock: 5 },
       { volume: '5L', price: '₹ 1599', stock: 5 , image: CarPerfume5L},
       
       
@@ -141,7 +142,7 @@ const products = {
       { volume: '30ml', price: '₹ 90', stock: 5 , image: TyrePolish30ml},
       { volume: '100ml', price: '₹ 199', stock: 20},
       { volume: '200ml', price: '₹ 749', stock: 10 ,image: TyrePolish },
-      { volume: '500ml', price: '₹ 949', stock: 5 ,image: TyrePolish500ml},
+      { volume: '500ml', price: '₹ 949', stock: 5 },
       { volume: '5L', price: '₹ 1599', stock: 5 ,image: TyrePolish5L},
       
     ],
@@ -193,7 +194,7 @@ const products = {
       { volume: '30ml', price: '₹ 90', stock: 5 },
       { volume: '100ml', price: '₹ 199', stock: 20, image: CarwashShampoo100ml },
       { volume: '200ml', price: '₹ 749', stock: 10, image: CarwashShampoo },
-      { volume: '500ml', price: '₹ 949', stock: 5 ,image: CarwashShampoo500ml},
+      { volume: '500ml', price: '₹ 949', stock: 5 },
       { volume: '5L', price: '₹ 1599', stock: 5 , image: CarwashShampoo5L},
       
     ],
@@ -250,9 +251,9 @@ const products = {
     rating: 4.6,
      variants: [
        { volume: '30ml', price: '₹ 90', stock: 5 , image: DashboardPolish30ml} ,
-      { volume: '100ml', price: '₹ 199', stock: 20 },
+      { volume: '100ml', price: '₹ 199', stock: 20 ,image: DashboardPolish100ml},
       { volume: '200ml', price: '₹ 749', stock: 10 },
-      { volume: '500ml', price: '₹ 949', stock: 5, image: DashboardPolish500ml },
+      { volume: '500ml', price: '₹ 949', stock: 5},
       { volume: '5L', price: '₹ 1599', stock: 5 , image: DashboardPolish5L}
     ],
     benefits: [
@@ -293,51 +294,7 @@ const products = {
     stock: 45,
     reviews: 89
   },
-  'room-freshener': {
-    name: 'Room Freshener',
-    price: '₹ 90.00',
-    originalPrice: '₹ 100.00',
-    description: 'Transform Your Space with Forever Shine room freshener.',
-    category: 'HOME CARE',
-    rating: 0,
-      variants: [
-        { volume: '30ml', price: '₹ 90', stock: 5 , image: RoomFreshener },
-      { volume: '100ml', price: '₹ 199', stock: 20  },
-      { volume: '200ml', price: '₹ 749', stock: 10 , image: RoomFreshener },
-      { volume: '500ml', price: '₹ 949', stock: 5 },
-      { volume: '5L', price: '₹ 1599', stock: 5},
-      
-    ],
-    benefits: [
-      'Long-Lasting Scent',
-      'Variety of Scents',
-      'Easy to Use',
-      'Natural components',
-      'Safe for Home',
-      'Safe for pets/kids',
-      'Inviting atmosphere',
-      'Impress your guests'
-    ],
-    howToUse: [
-      {
-        title: 'Spray',
-        description: 'Spray the freshener into the air, facing the roof in 2-3 corners'
-      },
-      {
-        title: 'Fabric',
-        description: 'You can also spray the freshener onto fabric, such as curtains or upholstery, for a longer-lasting scent.'
-      },
-      {
-        title: 'Refresh',
-        description: 'Re-apply the freshener as needed to maintain a pleasant fragrance.'
-      }
-    ],
-    keyIngredients: ['Essential Oils: Provide a natural and pleasant scent.'],
-    image: RoomFreshener,
-    stock: 100,
-    sku: '1002',
-    reviews: 0
-  },
+  
   // new product details
   'dry-clean-shampoo': {
   name: 'Dry Clean Shampoo',
@@ -349,7 +306,7 @@ const products = {
     { volume: '30ml', price: '₹ 90', stock: 5 , image: DryCleanShampoo30ml },
       { volume: '100ml', price: '₹ 199', stock: 20 , image: DryCleanShampoo100ml},
       { volume: '200ml', price: '₹ 749', stock: 10 , image: DryCleanShampoo},
-      { volume: '500ml', price: '₹ 949', stock: 5, image: DryCleanShampoo500ml },
+      { volume: '500ml', price: '₹ 949', stock: 5},
       { volume: '5L', price: '₹ 1599', stock: 5, image: DryCleanShampoo5L },
       
     ],
@@ -398,7 +355,7 @@ const products = {
     { volume: '30ml', price: '₹ 90', stock: 5 , image: GlassCleaner30ml },
       { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassCleaner100ml },
       { volume: '200ml', price: '₹ 749', stock: 10, image: GlassCleaner },
-      { volume: '500ml', price: '₹ 949', stock: 5 , image: GlassCleaner500ml },
+      { volume: '500ml', price: '₹ 949', stock: 5  },
       { volume: '5L', price: '₹ 1599', stock: 5,image: GlassCleaner5L },
       
     ],
@@ -452,7 +409,7 @@ const products = {
     { volume: '30ml', price: '₹ 90', stock: 5 ,image: GlassDeffoger30ml },
       { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassDeffoger100ml },
       { volume: '200ml', price: '₹ 749', stock: 10 , image: GlassDeffoger },
-      { volume: '500ml', price: '₹ 949', stock: 5 ,image: GlassDeffoger500ml },
+      { volume: '500ml', price: '₹ 949', stock: 5  },
       { volume: '5L', price: '₹ 1599', stock: 5 ,image: GlassDeffoger5L },
       
     ],
@@ -504,7 +461,7 @@ const products = {
     { volume: '30ml', price:  '₹ 90', stock: 5 , image: WiperWasherShampoo30ml },
       { volume: '100ml', price: '₹ 199', stock: 20, image: WiperWasherShampoo100ml },
       { volume: '200ml', price: '₹ 749', stock: 10 , image: WiperWasherShampoo },
-      { volume: '500ml', price: '₹ 949', stock: 5, image: WiperWasherShampoo500ml },
+      { volume: '500ml', price: '₹ 949', stock: 5},
       { volume: '5L', price: '₹ 1599', stock: 5 ,image: WiperWasherShampoo5L },
       
     ],
