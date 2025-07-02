@@ -56,7 +56,7 @@ import DryCleanShampoo5L from './assets/5L/Dry-clean-Shampoo-b.png';
 import CarwashShampoo5L from './assets/5L/Car-wash-shampoo-b.png';
 import GlassCleaner5L from './assets/5L/Glass-cleaner-b.png';
 import GlassDeffoger5L from './assets/5L/Glass-deffoger.png';
-import WiperWasherShampoo5L from './assets/5L/wiper-washer-shampoo.png';
+import WiperWasherShampoo5L from './assets/5L/wiper-washer-shampoo-b.png';
 import CarPerfume5L from './assets/5L/Car-perfume-b.png'
 import DashboardPolish5L from './assets/5L/Dashboard-polish-b.png'
 import TyrePolish5L from './assets/5L/Tyre-polish-b.png'
@@ -96,7 +96,7 @@ const products = {
   'car-perfume': {
     name: 'Car Perfume',
     price: '₹ 225.00',
-    description: 'Long-lasting car perfume that keeps your vehicle smelling fresh and pleasant. Perfect for all car types.',
+    description: 'Enhance your driving experience with a touch of luxury and experience a beautiful aromatic journey. .',
     category: 'CAR CARE',
     rating: 4.5,
      variants: [
@@ -109,13 +109,13 @@ const products = {
       
     ],
     benefits: [
-      'Long-lasting fragrance',
-      'Easy to use',
-      'Suitable for all car types',
-      'Non-toxic formula',
+      'Enhanced mood',
+      'Eliminates odors',
+      'Freshness',
+      'Personalization',
       'Fresh and pleasant scent',
-      'Compact design',
-      'Easy to carry',
+      'Long lasting',
+      'Fits in well',
       'Affordable price'
     ],
     howToUse: [
@@ -134,9 +134,9 @@ const products = {
     ],
     keyIngredients: [
       'Fragrance oils: Provide long-lasting pleasant scent',
-      'Carrier solution: Ensures even distribution of fragrance',
-      'Stabilizers: Maintain fragrance consistency',
-      'Preservatives: Extend product shelf life'
+      'Solvent: Dissolves fragrance oils for easy application',
+      'Stabilizers: Prevents the fragnance freom fading or changing ovetime.',
+      
     ],
     image: CarPerfume,
     stock: 50,
@@ -186,9 +186,9 @@ const products = {
     ],
     keyIngredients: [
       'Silicone polymers: Provide long-lasting shine',
-      'UV inhibitors: Protect against sun damage',
-      'Cleaning agents: Remove dirt and grime',
-      'Conditioners: Keep rubber supple'
+      'Solvents: Help to dissolve the silocone and make it easier to apply.',
+      'Emulsifiers: These helps to keep the silicone and make it easier to apply.',
+      'Fragnances: These are added to make the polish smeell nice.'
     ],
     image: TyrePolish,
     stock: 75,
@@ -267,14 +267,14 @@ const products = {
       { volume: '5L', price: '₹ 1599', stock: 5, image: DashboardPolish5L },
     ],
     benefits: [
-      'Restores shine',
-      'UV protection',
-      'Anti-static formula',
-      'Safe for all dashboard materials',
+      'Subtle fragnance',
+      'Shiny Dashboard',
+      'Clean Inetriors',
+      'Dust-free front',
       'Long-lasting protection',
-      'Easy to apply',
-      'Non-greasy finish',
-      'Prevents cracking'
+      'Smell free car',
+      'Quick Dry',
+      'Natural finish'
     ],
     howToUse: [
       {
@@ -295,10 +295,8 @@ const products = {
       }
     ],
     keyIngredients: [
-      'Silicone polymers: Provide long-lasting shine and protection',
-      'UV inhibitors: Protect against sun damage',
-      'Cleaning agents: Remove dirt and grime',
-      'Anti-static agents: Prevent dust accumulation'
+      'Surfactants: They Break down dirt, grease and grime, allowing them to be easily rinsed away.',
+      'Water: Acts as a solvent and carrier for the other ingredients.',
     ],
     image: DashboardPolish,
     stock: 45,
