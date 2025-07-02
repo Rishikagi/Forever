@@ -29,13 +29,8 @@ const baseProducts = [
   
 ];
 
-// Create 16 products by repeating the base products
-const products = Array(16).fill(0).map((_, index) => {
-  const baseProduct = baseProducts[index % baseProducts.length];
-  return {
-    ...baseProduct
-  };
-});
+// Remove repetition, use baseProducts directly
+const products = baseProducts;
 
 export default function HomeCare() {
   const { addToCart } = useCart();
@@ -114,11 +109,11 @@ export default function HomeCare() {
         {filteredProducts.map((product, index) => (
           <div
             key={index}
-            className="flex flex-col items-start bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 transform hover:-translate-y-2 cursor-pointer relative"
+            className="flex flex-col items-center bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 relative"
           >
             <Zoom>
             <Link to={`/product/${product.id}`}>
-              <img src={product.image} alt={product.name} className="w-56 h-56 object-cover mb-3 shadow" />
+              <img src={product.image} alt={product.name} className="w-56 h-56 object-cover mb-3 shadow cursor-pointer" />
             </Link>
             </Zoom>
             <span className="text-lg font-semibold text-gray-800 mb-1">{product.name}</span>
@@ -138,11 +133,13 @@ export default function HomeCare() {
                 aria-label="Add to wishlist"
                 className="p-2 rounded-full"
               >
-                <HeartIcon
-                  className={`w-6 h-6 ${
-                    isInWishlist(product.id) ? 'text-red-500' : 'text-gray-700'
-                  }`}
-                />
+                {isInWishlist(product.id) ? (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-red-500" viewBox="0 0 24 24" fill="red" stroke="red" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 21C12 21 5 14.5 5 9.5C5 7.01472 7.01472 5 9.5 5C10.8807 5 12 6.11929 12 6.11929C12 6.11929 13.1193 5 14.5 5C16.9853 5 19 7.01472 19 9.5C19 14.5 12 21 12 21Z" />
+                  </svg>
+                ) : (
+                  <HeartIcon className="w-6 h-6 text-gray-700" />
+                )}
               </button>
               <button
                 onClick={() => handleShare(product)}
