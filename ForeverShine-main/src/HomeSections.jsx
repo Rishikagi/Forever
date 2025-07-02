@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from './context/CartContext';
 import { useWishlist } from './context/WishlistContext';
@@ -142,8 +142,8 @@ export default function HomeSections() {
           <Link 
             key={idx} 
             to={cat.name.includes('Personal') ? '/personal-care' : 
-                cat.name.includes('Car') ? '/car-care' : 
-                cat.name.includes('Home') ? '/home-care' : '/'}
+                cat.name.includes('Home') ? '/home-care' : 
+                cat.name.includes('Car') ? '/car-care' : '/'}
             className="flex flex-col items-center border-2 border-teal-200 rounded-2xl p-4 md:p-6 w-full md:w-64 bg-white shadow-xl hover:shadow-2xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer"
           >
             <img src={cat.icon} alt={cat.name} className="w-32 h-32 md:w-44 md:h-44 mb-4 rounded-xl shadow-md object-contain bg-gradient-to-br from-teal-50 to-white" />
@@ -158,7 +158,7 @@ export default function HomeSections() {
         {bestSellers.map((prod, idx) => (
           <div 
             key={idx} 
-            className="flex flex-col items-start w-full bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 transform hover:-translate-y-2 cursor-pointer relative"
+            className="flex flex-col items-center w-full bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 transform hover:-translate-y-2 cursor-pointer relative"
           >
             <Zoom>
               <Link to={`/product/${prod.id}`}>
@@ -215,7 +215,7 @@ export default function HomeSections() {
         {newArrivals.map((prod, idx) => (
           <div 
             key={idx} 
-            className="flex flex-col items-start w-full bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 transform hover:-translate-y-2 cursor-pointer relative"
+            className="flex flex-col items-center w-full bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out p-4 transform hover:-translate-y-2 cursor-pointer relative"
           >
             <Zoom>
               <Link to={`/product/${prod.id}`}>
@@ -278,42 +278,33 @@ export default function HomeSections() {
       <div className="w-full bg-white py-8 md:py-14 shadow-inner rounded-t-3xl">
         <div className="max-w-6xl mx-auto px-4 md:px-0">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6 md:mb-10 text-left tracking-tight text-gray-900 drop-shadow">Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center items-center">
-            <div className="flex flex-col items-center">
-              <div className="font-bold text-xl md:text-2xl mb-2">
-                <div className='services-icon mb-1 flex justify-center items-center'><img src='https://icon-library.com/images/free-shipping-icon-vector/free-shipping-icon-vector-6.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
-                <span className="text-[#3422FF]">Free</span>
-                <span className="text-black"> Shipping</span>
-              </div>
-              
-              <div className="text-base md:text-lg text-gray-800">Free shipping on all US order or above $200</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 text-center">
+            {/* Service 1 */}
+            <div className="flex flex-col items-center text-center p-4">
+              <div className='services-icon mb-1 flex justify-center items-center'><img src='https://icon-library.com/images/free-shipping-icon-vector/free-shipping-icon-vector-6.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
+              <span className="text-[#3422FF] font-bold">Free</span>
+              <span className="text-black font-bold"> Shipping</span>
+              <div className="text-base md:text-lg text-gray-800 mt-2">Free shipping on all US order or above $200</div>
             </div>
-            <div className="flex flex-col items-center">
-              
-              <div className="font-bold text-xl md:text-2xl mb-2">
-                <div className='services-icon font-bold text-xl md:text-2xl mb-2'><img src='https://img.freepik.com/premium-vector/24x7-service-logo-design-everyday-vector-file_389740-725.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
-                <span className="text-[#3422FF]">24x7</span>
-                <span className="text-black"> Support</span>
-              </div>
-              <div className="text-base md:text-lg text-gray-800">Contact us 24 hours a day, 7 days a week</div>
+            {/* Service 2 */}
+            <div className="flex flex-col items-center text-center p-4">
+              <div className='services-icon font-bold text-xl md:text-2xl mb-2'><img src='https://img.freepik.com/premium-vector/24x7-service-logo-design-everyday-vector-file_389740-725.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
+              <span className="text-[#3422FF] font-bold">24x7</span>
+              <span className="text-black font-bold"> Support</span>
+              <div className="text-base md:text-lg text-gray-800 mt-2">Contact us 24 hours a day, 7 days a week</div>
             </div>
-            <div className="flex flex-col items-center">
-             
-              <div className="font-bold text-xl md:text-2xl mb-2">
-                 <div className='services-icon font-bold text-xl md:text-2xl mb-2'><img src='https://thumbs.dreamstime.com/b/flat-line-design-concept-icon-purchase-returns-support-delivery-process-online-order-procedure-website-banner-landing-page-120718997.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
-                <span className="text-[#3422FF]">7 days</span>
-                <span className="text-black"> Return</span>
-              </div>
-              <div className="text-base md:text-lg text-gray-800">Simply return it within 7 days for an exchange</div>
+            {/* Service 3 */}
+            <div className="flex flex-col items-center text-center p-4">
+              <div className='services-icon font-bold text-xl md:text-2xl mb-2'><img src='https://thumbs.dreamstime.com/b/flat-line-design-concept-icon-purchase-returns-support-delivery-process-online-order-procedure-website-banner-landing-page-120718997.jpg'  className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
+              <span className="text-[#3422FF] font-bold">7 days</span>
+              <span className="text-black font-bold"> Return</span>
+              <div className="text-base md:text-lg text-gray-800 mt-2">Simply return it within 7 days for an exchange</div>
             </div>
-            <div className="flex flex-col items-center">
-              
-              <div className="font-bold text-xl md:text-2xl mb-2">
-                <div className='services-icon mb-1 flex justify-center items-center'><img src='https://logowik.com/content/uploads/images/secure-payment2785.jpg' className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
-                <span className="text-[#3422FF]">Payment </span><span className="text-black">Secure</span>
-              </div>
-
-              <div className="text-base md:text-lg mt-2 text-gray-800">Contact us 24 hours a day, 7 days a week</div>
+            {/* Service 4 */}
+            <div className="flex flex-col items-center text-center p-4">
+              <div className='services-icon mb-1 flex justify-center items-center'><img src='https://logowik.com/content/uploads/images/secure-payment2785.jpg' className='shadow-xl border-4 border-gray-100 hover:scale-105 hover:shadow-2xl transition-all duration-300'/></div>
+              <span className="text-[#3422FF] font-bold">Payment </span><span className="text-black font-bold">Secure</span>
+              <div className="text-base md:text-lg text-gray-800 mt-2">Contact us 24 hours a day, 7 days a week</div>
             </div>
           </div>
         </div>

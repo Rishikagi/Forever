@@ -24,6 +24,8 @@ import GlassCleaner100ml from './assets/100ml/Glass-cleaner.png';
 import GlassDeffoger100ml from './assets/100ml/Glass-deffoger.png';
 import WiperWasherShampoo100ml from './assets/100ml/Wiper-washer-shampoo.png';
 import DashboardPolish100ml from './assets/100ml/Dashboard polish.png';
+import CarPerfume100ml from './assets/100ml/Car perfume.png';
+import TyrePolish100ml from './assets/100ml/Tyre polish.png';
 
 // 30ml
 import CarPerfume30ml from './assets/30ml/car perfume.png';
@@ -32,8 +34,11 @@ import DashboardPolish30ml from './assets/30ml/Dashboard polish.png';
 import DryCleanShampoo30ml from './assets/30ml/Dry clean Shampoo.png';
 import GlassCleaner30ml from './assets/30ml/glass cleaner.png';
 import GlassDeffoger30ml from './assets/30ml/glass defogger.png';
-import GlassWashShampoo30ml from './assets/30ml/glass wash shampoo.png'; //new product
+import GlassWashShampoo30ml from './assets/30ml/glass wash shampoo.png';
 import WiperWasherShampoo30ml from './assets/30ml/wiper washer shampoo.png';
+
+// 200ml
+
 
 // 500ml
 import DryCleanShampoo500ml from './assets/500ml/Dry clean Shampoo.png';
@@ -57,6 +62,11 @@ import DashboardPolish5L from './assets/5L/Dashboard-polish-b.png'
 import TyrePolish5L from './assets/5L/Tyre-polish-b.png'
 import Dashboard from './assets/5l/Dashboard.png'
 import DryClean from './assets/5l/Dry clean.png'
+
+// 5L
+
+
+
 
 
 
@@ -90,11 +100,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.5,
      variants: [
-      { volume: '30ml', price: '₹ 90', stock: 5 , image: CarPerfume30ml},
-      { volume: '100ml', price:'₹ 199', stock: 20  },
+      { volume: '30ml', price: '₹ 90', stock: 5, image: CarPerfume30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: CarPerfume100ml },
       { volume: '200ml', price: '₹ 749', stock: 10, image: CarPerfume },
-      { volume: '500ml', price: '₹ 949', stock: 5 },
-      { volume: '5L', price: '₹ 1599', stock: 5 , image: CarPerfume5L},
+      { volume: '500ml', price: '₹ 949', stock: 5, image: CarPerfume500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: CarPerfume5L },
       
       
     ],
@@ -139,11 +149,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.3,
      variants: [
-      { volume: '30ml', price: '₹ 90', stock: 5 , image: TyrePolish30ml},
-      { volume: '100ml', price: '₹ 199', stock: 20},
-      { volume: '200ml', price: '₹ 749', stock: 10 ,image: TyrePolish },
-      { volume: '500ml', price: '₹ 949', stock: 5 },
-      { volume: '5L', price: '₹ 1599', stock: 5 ,image: TyrePolish5L},
+      { volume: '30ml', price: '₹ 90', stock: 5, image: TyrePolish30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: TyrePolish100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: TyrePolish },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: TyrePolish500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: TyrePolish5L },
       
     ],
     benefits: [
@@ -191,11 +201,11 @@ const products = {
     category: 'CAR CARE',
     rating: 0,
      variants: [
-      { volume: '30ml', price: '₹ 90', stock: 5 },
+      { volume: '30ml', price: '₹ 90', stock: 5, image: GlassWashShampoo30ml },
       { volume: '100ml', price: '₹ 199', stock: 20, image: CarwashShampoo100ml },
       { volume: '200ml', price: '₹ 749', stock: 10, image: CarwashShampoo },
-      { volume: '500ml', price: '₹ 949', stock: 5 },
-      { volume: '5L', price: '₹ 1599', stock: 5 , image: CarwashShampoo5L},
+      { volume: '500ml', price: '₹ 949', stock: 5, image: CarwashShampoo500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: CarwashShampoo5L },
       
     ],
     benefits: [
@@ -250,11 +260,11 @@ const products = {
     category: 'CAR CARE',
     rating: 4.6,
      variants: [
-       { volume: '30ml', price: '₹ 90', stock: 5 , image: DashboardPolish30ml} ,
-      { volume: '100ml', price: '₹ 199', stock: 20 ,image: DashboardPolish100ml},
-      { volume: '200ml', price: '₹ 749', stock: 10 },
-      { volume: '500ml', price: '₹ 949', stock: 5},
-      { volume: '5L', price: '₹ 1599', stock: 5 , image: DashboardPolish5L}
+       { volume: '30ml', price: '₹ 90', stock: 5, image: DashboardPolish30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: DashboardPolish100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: DashboardPolish },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: DashboardPolish500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: DashboardPolish5L },
     ],
     benefits: [
       'Restores shine',
@@ -303,10 +313,10 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
-    { volume: '30ml', price: '₹ 90', stock: 5 , image: DryCleanShampoo30ml },
-      { volume: '100ml', price: '₹ 199', stock: 20 , image: DryCleanShampoo100ml},
-      { volume: '200ml', price: '₹ 749', stock: 10 , image: DryCleanShampoo},
-      { volume: '500ml', price: '₹ 949', stock: 5},
+    { volume: '30ml', price: '₹ 90', stock: 5, image: DryCleanShampoo30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: DryCleanShampoo100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: DryCleanShampoo },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: DryCleanShampoo500ml },
       { volume: '5L', price: '₹ 1599', stock: 5, image: DryCleanShampoo5L },
       
     ],
@@ -352,11 +362,11 @@ const products = {
   category: ' HOME CARE',
   rating: 4.6,
    variants: [
-    { volume: '30ml', price: '₹ 90', stock: 5 , image: GlassCleaner30ml },
-      { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassCleaner100ml },
+    { volume: '30ml', price: '₹ 90', stock: 5, image: GlassCleaner30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: GlassCleaner100ml },
       { volume: '200ml', price: '₹ 749', stock: 10, image: GlassCleaner },
-      { volume: '500ml', price: '₹ 949', stock: 5  },
-      { volume: '5L', price: '₹ 1599', stock: 5,image: GlassCleaner5L },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: GlassCleaner500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: GlassCleaner5L },
       
     ],
   benefits: [
@@ -406,11 +416,11 @@ const products = {
   category: 'CAR CARE',
   rating: 4.3,
    variants: [
-    { volume: '30ml', price: '₹ 90', stock: 5 ,image: GlassDeffoger30ml },
-      { volume: '100ml', price: '₹ 199', stock: 20 , image: GlassDeffoger100ml },
-      { volume: '200ml', price: '₹ 749', stock: 10 , image: GlassDeffoger },
-      { volume: '500ml', price: '₹ 949', stock: 5  },
-      { volume: '5L', price: '₹ 1599', stock: 5 ,image: GlassDeffoger5L },
+    { volume: '30ml', price: '₹ 90', stock: 5, image: GlassDeffoger30ml },
+      { volume: '100ml', price: '₹ 199', stock: 20, image: GlassDeffoger100ml },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: GlassDeffoger },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: GlassDeffoger500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: GlassDeffoger5L },
       
     ],
   benefits: [
@@ -458,11 +468,11 @@ const products = {
   category: 'CAR CARE',
   rating: 4.4,
    variants: [
-    { volume: '30ml', price:  '₹ 90', stock: 5 , image: WiperWasherShampoo30ml },
+    { volume: '30ml', price: '₹ 90', stock: 5, image: WiperWasherShampoo30ml },
       { volume: '100ml', price: '₹ 199', stock: 20, image: WiperWasherShampoo100ml },
-      { volume: '200ml', price: '₹ 749', stock: 10 , image: WiperWasherShampoo },
-      { volume: '500ml', price: '₹ 949', stock: 5},
-      { volume: '5L', price: '₹ 1599', stock: 5 ,image: WiperWasherShampoo5L },
+      { volume: '200ml', price: '₹ 749', stock: 10, image: WiperWasherShampoo },
+      { volume: '500ml', price: '₹ 949', stock: 5, image: WiperWasherShampoo500ml },
+      { volume: '5L', price: '₹ 1599', stock: 5, image: WiperWasherShampoo5L },
       
     ],
   benefits: [
@@ -505,15 +515,12 @@ const products = {
 'glass-wash-shampoo': {
   name: 'Glasswash Shampoo',
   price: '₹ 249.00',
-  description: 'Premium glasswash shampoo that provides a crystal-clear finish and removes tough dirt, grime, and water stains from your vehicle’s windows and mirrors.',
+  description: 'Premium glasswash shampoo that provides a crystal-clear finish and removes tough dirt, grime, and water stains from your vehicle\'s windows and mirrors.',
   category: 'CAR CARE',
   rating: 4.7,
   variants: [
     { volume: '30ml', price: '₹ 90', stock: 12, image: GlassWashShampoo30ml },
-    { volume: '100ml', price: '₹ 99', stock: 0 }, 
-    { volume: '200ml', price: '₹ 179', stock: 12 },
     { volume: '500ml', price: '₹ 299', stock: 8 },
-    { volume: '5L', price: '₹ 1599', stock: 2 },
   ],
   benefits: [
     'Removes dirt, grease, and water stains',
@@ -548,7 +555,7 @@ const products = {
   image: GlassWashShampoo30ml,
   stock: 10,
   reviews: 87
-}
+},
 
 
 };

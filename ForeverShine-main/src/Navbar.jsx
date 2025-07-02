@@ -158,13 +158,19 @@ export default function Navbar() {
                 <li className="hover:bg-teal-50">
                   <Link to="/about-us" className="block px-4 py-2 text-gray-800 hover:text-teal-700" onClick={() => setIsMobileMenuOpen(false)}>About us</Link>
                 </li>
+                <li className="hover:bg-teal-50 flex items-center">
+                  <Link to="/wishlist" className="block px-4 py-2 text-gray-800 hover:text-teal-700 flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
+                    <HeartIcon className="w-5 h-5 text-pink-500" />
+                    Wishlist
+                  </Link>
+                </li>
               </ul>
             </div></div>
           )}
          
 
           {/* Right Icons */}
-          <div className="flex items-center gap-2 md:gap-3 bg-teal-100/80 py-2 rounded-full px-2 md:px-4 shadow-md">
+          <div className="flex items-center md:gap-3 bg-teal-100/80 py-2 rounded-full md:px-4 shadow-md">
             {/* Search Icon */}
             <div className="relative" ref={searchRef}>
               <button 
@@ -289,14 +295,14 @@ export default function Navbar() {
               <>
                 <Link
                   to="/Login"
-                  className="text-teal-700 font-semibold ml-4 hover:underline"
+                  className="text-teal-700 font-semibold ml-2 md:ml-4 text-sm md:text-base px-1 md:px-2 hover:underline"
                 >
                   Login
                 </Link>
-                <span className="text-teal-700 font-semibold ml-2 mr-2">/</span>
+                <span className="text-teal-700 font-semibold mx-1 md:mx-2 text-sm md:text-base">/</span>
                 <Link
                   to="/SignUp"
-                  className="text-teal-700 font-semibold ml-2 hover:underline"
+                  className="text-teal-700 font-semibold mr-2 md:mr-0 text-sm md:text-base px-1 md:px-2 hover:underline"
                 >
                   SignUp
                 </Link>
